@@ -109,17 +109,6 @@
             </div>
             </form>
         </wz-step>
-        <wz-step title="Permissions" wz-disabled="{{appending(true)}}">
-            <img class="import-wizard-image" ng-src="{{ staticUrl }}/osgeo_importer/img/edit.png"/>
-            <h3><strong>Enable version history?</strong></h3>
-            <div class="btn-group">
-                <label class="btn btn-success"  ng-model='layer.configuration_options.editable' uib-btn-radio="true">Yes</label>
-                <label class="btn btn-success" ng-model='layer.configuration_options.editable' uib-btn-radio="false">No</label>
-            </div>
-            <div class="import-wizard-button">
-                <button class="btn" type="submit" wz-next value="Continue">Continue <i class="fa fa-arrow-circle-right"></i></button>
-            </div>
-        </wz-step>
         <wz-step title="{{appending() === true ? 'Append' : 'Import'}}">
             <h3><strong>Ok, we're ready to create the layer!</strong></h3>
             <p ng-hide="success">Click below to import your layer.</p>
